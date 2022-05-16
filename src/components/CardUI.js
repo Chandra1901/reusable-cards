@@ -3,7 +3,9 @@ import Vector from './Vector'
 import Question from './Question'
 import './CardUI.css'
 
-const CardUI3 = () => {
+const CardUI1 = (props) => {
+
+    const { title, para, num1, para1, num2, para2, num3, para3 } = props;
   return (
     <div className='card-container'>
         <div className='Innner-container'>
@@ -12,28 +14,28 @@ const CardUI3 = () => {
             </div>
             <br />
             <div className='head-div'>
-                <h4>Guest User Licence</h4>
+                <h4>{title}</h4>
                 &nbsp;
                 &nbsp;
                 <Question />
             </div>
             <div>
-                <p>All the users in your licence, active, Invited and available. </p>
+                <p>{para}</p>
             </div>
             <br />
             <br />
             <div className='bottom-conatainer'>
                 <div>
-                    <h4>1000</h4>
-                    <p>Available</p>
+                    <h4>{num1}</h4>
+                    <p>{para1}</p>
                 </div>
                 <div>
-                    <h4>45</h4>
-                    <p>Invited</p>
+                    <h4>{num2}</h4>
+                    <p>{para2}</p>
                 </div>
                 <div>
-                   <h4>15</h4>
-                   <p>Activated</p>
+                   <h4>{num3}</h4>
+                   <p>{para3}</p>
                 </div>
             </div>
         </div>
@@ -41,4 +43,4 @@ const CardUI3 = () => {
   )
 }
 
-export default CardUI3
+export default CardUI1
