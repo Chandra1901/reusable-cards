@@ -44,3 +44,5 @@ const CardUI1 = (props) => {
 }
 
 export default CardUI1
+
+
